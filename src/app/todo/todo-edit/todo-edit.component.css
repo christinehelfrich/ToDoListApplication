@@ -1,0 +1,9 @@
+input.ng-invalid {
+  border: 1px solid red;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+h1, h2, h3, h4, h5, p, button, input, label {
+    font-family: 'Quicksand', sans-serif;
+}

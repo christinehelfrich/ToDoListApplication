@@ -1,0 +1,28 @@
+
+
+
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.pad-left-right{
+  padding-left:1rem;
+  padding-right:1rem;
+}
+
+.panel {
+  border: none;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.panel-heading {
+  background-color: rgb(245, 160, 3);
+  color: white;
+}
+
+

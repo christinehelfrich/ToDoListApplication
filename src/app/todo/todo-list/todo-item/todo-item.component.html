@@ -1,0 +1,13 @@
+<a 
+style="cursor: pointer;"
+[routerLink]="[todo.id]"
+routerLinkActive="active"
+class="list-group-item">
+  <h4 class="list-group-item-heading">{{ todo.name }}
+    <div class="row pull-right margin-left-right">
+      <a class="btn btn-info" (click)="onEditToDo()">Edit Task</a>
+      <a class="btn btn-success" (click)="onDelete()">Complete Task</a>
+    </div>
+  </h4>
+</a>
+

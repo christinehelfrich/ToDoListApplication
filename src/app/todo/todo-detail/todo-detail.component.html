@@ -1,0 +1,25 @@
+<div class="panel panel-default" xmlns="http://www.w3.org/1999/html">
+  <div class="panel-heading">
+    <div class="row pad-all">
+      <h4 class="title margin-left-right">Task: {{todo?.name}}</h4>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="pad-left-right">
+      <div class="row">
+        <label>Notes:</label>
+        <span class="label-value"> {{todo?.description}}</span>
+      </div>
+      <div class="row">
+        <label>Priority Level:</label>
+        <span class="label-value"> {{todo?.priority}}</span>
+      </div>
+      <div class="row pull-left margin-left-right">
+        <a class="btn btn-info" (click)="onEditToDo()">Edit Notes</a>
+        <a class="btn btn-success" (click)="onDelete()">Complete</a>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+

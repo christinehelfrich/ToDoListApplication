@@ -1,0 +1,67 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+
+    <form id="document-edit" (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="name">Task Title:</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            size="120"
+            max="120"
+            name="name"
+            [ngModel]="todo?.name"
+            #name="ngModel"
+            required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="description">Task Notes:</label>
+          <input
+            type="text"
+            id="description"
+            class="form-control"
+            size="120"
+            max="255"
+            name="description"
+            [ngModel]="todo?.description"
+            #description="ngModel">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="priority">Priority Level:</label>
+          <input
+            type="text"
+            id="priority"
+            class="form-control"
+            size="120"
+            max="255"
+            name="priority"
+            [ngModel]="todo?.priority"
+            #description="ngModel">
+        </div>
+      </div>
+
+      <div class="alert alert-danger" *ngIf="name.touched && !name.valid">
+        <p>The Task Title is a required fields.</p>
+
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 btn-toolbar">
+          <button class="btn btn-success" type="submit" [disabled]="!f.valid">Save Task</button>
+          <button class="btn btn-primary" type="button" (click)="onCancel()">Cancel</button>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+

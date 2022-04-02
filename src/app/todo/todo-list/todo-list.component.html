@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="row pad-left-right">
+      <span class="pull-left title">Today's To Do List</span>
+      <a (click)="onNewToDo()" class="btn btn-success pull-right">Add Task</a>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="list-group list-group-flush">
+      <app-todo-item
+      *ngFor="let todoEl of todos"
+      [todo]="todoEl"
+    >
+    </app-todo-item>
+    </div>
+  </div>
+
+</div>
+

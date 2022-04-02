@@ -1,0 +1,39 @@
+.title {
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.margin-left-right{
+  margin-left:1rem;
+  margin-right:1rem;
+}
+
+.pad-left-right{
+  margin-left:1rem;
+  margin-right:1rem;
+}
+
+.panel {
+  border: none;
+  margin-top: 1rem;
+}
+
+.panel-heading {
+  background-color: rgb(245, 160, 3);
+  color: white;
+}
+
+.title.margin-left-right {
+  z-index: 4;
+}
+
+.row.pull-left.margin-left-right a {
+  margin: .2rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+h1, h2, h3, h4, h5, p, button, input, label {
+    font-family: 'Quicksand', sans-serif;
+}
